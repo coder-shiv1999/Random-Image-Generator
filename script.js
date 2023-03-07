@@ -1,12 +1,13 @@
 url = "";
 
 function nextimg() {
-
-   pl = document.getElementById('pd');
-     pl.style.display = 'contents';
-     pl.style.height= '100vh';
-     pl.style.width = '100%';
-    pl.style.position = 'absolute'
+    img = document.getElementById("newimg");
+    img.src = "https://akshay2002singh.github.io/Image_Downloader/crop.gif";
+//    pl = document.getElementById('pd');
+//      pl.style.display = 'contents';
+//      pl.style.height= '100vh';
+//      pl.style.width = '100%';
+//     pl.style.position = 'absolute'
     
      topic = document.getElementById('topic').value
     width = document.getElementById('width').value
@@ -30,11 +31,11 @@ function nextimg() {
 
 
     img = document.getElementById("newimg");
-    img.addEventListener('load',function(e){
+    // img.addEventListener('load',function(e){
         
-        document.getElementById('pd').style.display = 'none';
-        console.log("helloolo")
-    })
+    //     // document.getElementById('pd').style.display = 'none';
+    //     console.log("helloolo")
+    // })
     api = `https://source.unsplash.com/random/${width}x${height}/?${topic}`;
 
     console.log(img);
