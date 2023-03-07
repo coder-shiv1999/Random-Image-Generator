@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Image Generator</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   
+
+
+    <header>
+        <div class="head">
+            <h2>Get Random Image On Any Topic</h2>
+        </div>
+    </header>
+
+    <div class="centre">
+        <div class="container">
+            <div class="txt">
+                <input type="text" id="topic" placeholder="Enter Your Topic">
+            </div>
+            <div class="txt">
+                <input type="number" id="width" placeholder="Enter preferred width(px)">
+            </div>
+            <div class="txt">
+                <input type="number" id="height" placeholder="Enter preferred height(px)">
+            </div>
+            <div>
+                <button onclick="nextimg()" class="btn">Get Image</button>
+            </div>
+            <div class="dev">
+                <h3>Developer - Shivam verma</h3>
+                <div class="icon">
+                    <a id="yt" target="_blank" href="https://www.youtube.com/channel/UC3s0dpwYlsjzK1U4dvqJctw"><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <a id="fb" target="_blank" href="https://www.facebook.com/profile.php?id=100008030318260"><i
+                            class="fa-brands fa-facebook-square"></i></a>
+                    <a id="ig" target="_blank" href="https://www.instagram.com/shivamverma_1999/"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="ct2">
+            
+            <div class="image">
+                <div id="pd">
+                <h2 id="pd">Your Image Will Apper Here</h2>
+                </div>
+                <img id="newimg" src="pic.png"  alt="No Image Found">
+            </div>
+            <div class="btns">
+                <div class="save">
+                    <button onclick="nextimg()" class="btn">Next Image</button>
+                </div>
+                <div class="save">
+                    <button onclick="saveimg()" class="btn">Save Image</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/5a20ecc771.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
